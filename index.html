@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon -->
+    <link rel="icon" href="./img/favicon.ico">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <!-- Google Fonts --> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet"> 
+    <!-- Style -->
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <title>Web Scraping, Data Extraction and Automation · Apify</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white py-4">
+            <div class="container"><!-- Container -->
+                <a class="navbar-brand" href="#">
+                    <img src="./img/logo.svg" alt="Web Scraping" width="130">
+                </a>
+                <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown"><!-- Solutions -->
+                            <a class="nav-link" data-toggle="dropdown" id="dropdown01" aria-haspopup="true" aria-expanded="false" href="#">Solutions<i class="fas fa-angle-down fa-sm ml-1"></i></i></a>
+                            <div class="dropdown-menu solutions" aria-labelledby="dropdown01">
+                                <div class="row">
+                                    <div class="col-12 col-md-6">
+                                        <h3>Documentation</h3>
+                                        <p class="text-black-50">
+                                            Proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                        </p>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <h3>Documentation</h3>
+                                        <p class="text-black-50">
+                                            Proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                        </p>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <h3>Documentation</h3>
+                                        <p class="text-black-50">
+                                            Proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li><!--/ Solutions -->
+                        <li class="nav-item dropdown"><!-- Platform -->
+                            <a class="nav-link" data-toggle="dropdown" id="dropdown01" aria-haspopup="true" aria-expanded="false" href="#">Platform<i class="fas fa-angle-down fa-sm ml-1"></i></i></a>
+                            <div class="dropdown-menu platform" aria-labelledby="dropdown01">
+                                <div class="row">
+                                    <div class="col-12 col-md-6">
+                                        <h3>Actors</h3>
+                                        <p class="text-black-50">The easy way to develop, run and share serverless cloud programs</p>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <h3>Storage</h3>
+                                        <p class="text-black-50">Specialized data storages for web scraping and automation</p>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <h3>Proxy</h3>
+                                        <p class="text-black-50">A universal HTTP proxy to prevent the blocking of your crawlers</p>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <h3>Integrations</h3>
+                                        <p class="text-black-50">Connect Apify with your favorite web apps and services</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li><!--/ Platform -->                        
+                        <li class="nav-item dropdown"><!-- Developers -->
+                            <a class="nav-link" data-toggle="dropdown" id="dropdown01" aria-haspopup="true" aria-expanded="false" href="#">Developers<i class="fas fa-angle-down fa-sm ml-1"></i></i></a>
+                            <div class="dropdown-menu developers" aria-labelledby="dropdown01">
+                                <div class="row">
+                                    <div class="col-12 col-md-6">
+                                        <h3>Documentation</h3>
+                                        <p class="text-black-50">Learn how to build your web scraping and automation solutions on Apify</p>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <h3>Stack Overflow</h3>
+                                        <p class="text-black-50">Get answers to common questions from the community</p>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <h3>Apify SDK</h3>
+                                        <p class="text-black-50">Use our popular open-source library for scalable web crawling and scraping</p>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <h3>Join Marketplace</h3>
+                                        <p class="text-black-50">Become a certified Apify developer and start building solutions for our customers</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li><!--/ Developers -->
+                        <li class="nav-item dropdown"><!-- Resources -->
+                            <a class="nav-link" data-toggle="dropdown" id="dropdown01" aria-haspopup="true" aria-expanded="false" href="#">Resources<i class="fas fa-angle-down fa-sm ml-1"></i></i></a>
+                            <div class="dropdown-menu resources" aria-labelledby="dropdown01">
+                                <div class="row">
+                                    <div class="col-12 col-md-6">
+                                        <h3>Actors</h3>
+                                        <p class="text-black-50">The easy way to develop, run and share serverless cloud programs</p>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <h3>Storage</h3>
+                                        <p class="text-black-50">Specialized data storages for web scraping and automation</p>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <h3>Proxy</h3>
+                                        <p class="text-black-50">A universal HTTP proxy to prevent the blocking of your crawlers</p>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <h3>Integrations</h3>
+                                        <p class="text-black-50">Connect Apify with your favorite web apps and services</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li><!--/ Resources --> 
+                        <li class="nav-item dropdown"><!-- Partners -->
+                            <a class="nav-link" data-toggle="dropdown" id="dropdown01" aria-haspopup="true" aria-expanded="false" href="#">Partners<i class="fas fa-angle-down fa-sm ml-1"></i></i></a>
+                            <div class="dropdown-menu partners" aria-labelledby="dropdown01">
+                                <div class="row">
+                                    <div class="col-12 col-md-6">
+                                        <h3>Documentation</h3>
+                                        <p class="text-black-50">Learn how to build your web scraping and automation solutions on Apify</p>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <h3>Stack Overflow</h3>
+                                        <p class="text-black-50">Get answers to common questions from the community</p>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <h3>Apify SDK</h3>
+                                        <p class="text-black-50">Use our popular open-source library for scalable web crawling and scraping</p>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <h3>Join Marketplace</h3>
+                                        <p class="text-black-50">Become a certified Apify developer and start building solutions for our customers</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li><!--/ Partners --> 
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                    </ul>
+                    <a href="#" class="btn btn-lg btn-outline-primary">Sign in</a>
+                </div>
+            </div><!--/ Container -->
+        </nav>
+        <div class="container py-md-2">
+            <div class="row header-content py-5 align-items-center"><!-- Header Content -->
+                <div class="col-12 col-md-6">
+                    <a href="#" class="btn btn-sm mb-4 btn-outline-primary" style="font">COVIDE-19 APIs</a>
+                    <h1 class="my-2">Extract data from any website</h1>
+                    <p>
+                        Apify is the one-stop shop for all your web scraping, data extraction, and robotic process automation (RPA) needs.
+                    </p>
+                    <a href="#" class="btn btn-primary btn-lg mt-4 mr-4">Browse ready-made tools</a>
+                    <a href="#" class="btn btn-primary btn-lg mt-2 mt-md-4">Order custom tools</a>
+                </div>
+                <div class="col-12 col-md-5 ml-auto py-3 d-none d-md-block">
+                    <video class="img-fluid" autoplay loop poster="./videos/animation-poster.webp" class="bg-video">
+                        <source src="./videos/animation-poster.webm" type="video/webm">
+                        <source src="./videos/homepage_animation.mp4" type="video/mp4">
+                    </video>    
+                </div>
+            </div><!--/ Header Content -->
+        </div>
+    </header>
+    <section>
+        <div class="container empresas text-center pb-5">
+            <h2 class="blockquote"><strong>Trusted by more than 15,000 companies from 179 countries.</strong></h2>
+            <div class="row mt-4 align-items-center">
+                <img src="./img/microsoft.svg" alt="microsoft" class="col-6 col-md-4 col-lg-2 my-2">
+                <img src="./img/agency_analytics.svg" alt="agency_analytics" class="col-6 col-md-4 col-lg-2 my-2">
+                <img src="./img/carvago.svg" alt="carvago" class="col-6 col-md-4 col-lg-2 my-2">
+                <img src="./img/decathlon.svg" alt="decathlon" class="col-6 col-md-4 col-lg-2 my-2">
+                <img src="./img/drop.svg" alt="drop" class="col-6 col-md-4 col-lg-2 my-2">
+                <img src="./img/eaton.svg" alt="eaton" class="col-6 col-md-4 col-lg-2 my-2">
+            </div>
+            <div class="row mt-3 align-items-center collapse" id="show-empresas">
+                <img src="./img/eon.png" alt="eon" class="col-6 col-md-4 col-lg-2 my-2">
+                <img src="./img/epojisteni.png" alt="epojisteni" class="col-6 col-md-4 col-lg-2 my-2">
+                <img src="./img/eventures.png" alt="eventures" class="col-6 col-md-4 col-lg-2 my-2">
+                <img src="./img/groupm.svg" alt="groupm" class="col-6 col-md-4 col-lg-2 my-2">
+                <img src="./img/idealo.png" alt="idealo" class="col-6 col-md-4 col-lg-2 my-2">
+                <img src="./img/impact.png" alt="impact" class="col-6 col-md-4 col-lg-2 my-2">
+                <img src="./img/knack.png" alt="knack" class="col-6 col-md-4 col-lg-2 my-2">
+                <img src="./img/mckinsey.svg" alt="mckinsey" class="col-6 col-md-4 col-lg-2 my-2">
+                <img src="./img/samsung.svg" alt="samsung" class="col-6 col-md-4 col-lg-2 my-2">
+                <img src="./img/thorn.png" alt="thorn" class="col-6 col-md-4 col-lg-2 my-2">
+                <img src="./img/tourlane.svg" alt="tourlane" class="col-6 col-md-4 col-lg-2 my-2">
+                <img src="./img/trigema.svg" alt="trigema" class="col-6 col-md-4 col-lg-2 my-2">
+                <img src="./img/accenture.svg" alt="accenture" class="col-6 col-md-4 col-lg-2 my-2">
+                <img src="./img/washington_edu.png" alt="washington_edu" class="col-6 col-md-4 col-lg-2 my-2">
+                <strong class="blockquote col-12 mb-4 mt-5">Looking for a complete end-to-end solution for any scale? See Apify for Enterprise</strong>
+            </div>
+            <div class="col-12">
+                <a class="" data-toggle="collapse" href="#show-empresas" role="button" aria-expanded="false" aria-controls="collapseExample" id="show-more">
+                    Show more
+                    <div class="chevron-an"><i class="fas fa-chevron-down fa-lg"></i></div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="bg-light text-center py-5">
+        <div class="container py-5"><!-- Container -->
+            <h2 class="section-h2 mb-5">Welcome to apify</h2>
+            <!-- Modal -->
+            <div class="modal fade" id="videoModal" tabindex="-1" role="dialog">
+                <button type="button" class="close text-white" data-dismiss="modal"><i class="fas fa-times fa-lg"></i></button>
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content ">
+                        <div class="modal-body bg-dark p-0">
+                            <div class="embed-responsive embed-responsive-16by9" id="innerVideo">
+                                <!-- Video -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/ Modal -->
+            <div class="welcome">
+                <a href="#" data-toggle="modal" data-target="#videoModal">
+                    <div class="img-welcome">
+                        <img src="./img/product_hunt_poster.jpg" alt="product hunt" class="img-fluid">
+                        <div class="play-welcome">
+                            <img src="./img/video-play.svg" alt="Play video">
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div><!--/ Container -->
+    </section>
+    <section>
+        <div class="container text-center text-md-left">
+            <div class="row"><!-- Row -->
+                <div class="col-12 col-md-4">
+                    <div class="sticky py-md-5">
+                        <h2 class="section-h2 mb-4 pt-5">Turn any website into an API</h2>
+                        <p>
+                            Apify is a software platform that enables forward-thinking companies to leverage the full potential of the web—the largest source of information ever created by humankind.
+                        </p>
+                    </div>
+                </div>
+                <div class="row col-12 col-md-8 py-3 py-md-5">
+                    <div class="col-12 col-md-6 text-md-right py-3 py-md-5"><!-- Col -->
+                        <img src="./img/hp-scraping.svg" width="220" class="img-fluid" alt="Web scraping">
+                    </div>
+                    <div class="col-12 col-md-6 py-3 py-md-5">
+                        <h3 class="section-h3 mb-4">Web scraping</h3>
+                        <p>
+                            Crawl arbitrary websites, extract structured data from them and export it to formats such as Excel, CSV or JSON.
+                        </p>
+                    </div><!--/ Col -->
+                    <div class="col-12 col-md-6 text-md-right py-3 py-md-5"><!-- Col -->
+                        <img src="./img/hp-automation.svg" width="220" class="img-fluid" alt="Web automation">
+                    </div>
+                    <div class="col-12 col-md-6 py-3 py-md-5">
+                        <h3 class="section-h3 mb-4">Web automation</h3>
+                        <p>
+                            Automate manual workflows and processes on the web, such as filling in forms or uploading files. Let robots do the grunt work.
+                        </p>
+                    </div><!--/ Col -->
+                    <div class="col-12 col-md-6 text-md-right py-3 py-md-5"><!-- Col -->
+                        <img src="./img/hp-storage.svg" width="220" class="img-fluid" alt="Web integration">
+                    </div>
+                    <div class="col-12 col-md-6 py-3 py-md-5">
+                        <h3 class="section-h3 mb-4">Web integration</h3>
+                        <p>
+                            Connect diverse web services and APIs, and let data flow between them. Add custom computing and data processing steps.
+                        </p>
+                    </div><!--/ Col -->
+                </div>
+            </div><!--/ Row -->
+        </div>
+    </section>
+    <section class="py-5 bg-light">
+        <div class="container py-5 help-business">
+            <h2 class="section-h2 mb-4">How can Apify help<br> your business?</h2>
+            <div class="row"><!-- Row -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <a href="#">
+                        <div class="help-business-card">
+                            <h3 class="help-business-h3">Market research <i class="fas fa-arrow-right"></i></h3>
+                            <img src="./img/ico-magnifier.svg" class="help-business-icon" alt="Market research">
+                            <p>Generate insights into your market from publicly available data on the web.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <a href="#">
+                        <div class="help-business-card">
+                            <h3 class="help-business-h3">RPA <i class="fas fa-arrow-right"></i></h3>
+                            <img src="./img/ico-cog.svg" class="help-business-icon" alt="RPA ICON">
+                            <p>Automate repetitive tasks that your workforce performs manually in a web browser.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <a href="#">
+                        <div class="help-business-card">
+                            <h3 class="help-business-h3">Price comparison <i class="fas fa-arrow-right"></i></h3>
+                            <img src="./img/ico-venn.svg" class="help-business-icon" alt="Price comparison">
+                            <p>Monitor your online competitors and automatically react to changes in their prices.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <a href="#">
+                        <div class="help-business-card">
+                            <h3 class="help-business-h3">Lead generation <i class="fas fa-arrow-right"></i></h3>
+                            <img src="./img/ico-target.svg" class="help-business-icon" alt="Lead generation">
+                            <p>Find new potential customers and collect data about them at scale.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <a href="#">
+                        <div class="help-business-card">
+                            <h3 class="help-business-h3">Machine learning <i class="fas fa-arrow-right"></i></h3>
+                            <img src="./img/ico-tracing.svg" class="help-business-icon" alt="Machine learning">
+                            <p>Generate large-scale datasets from the web for training your artificial intelligence models.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <a href="#">
+                        <div class="help-business-card">
+                            <h3 class="help-business-h3">Product development <i class="fas fa-arrow-right"></i></h3>
+                            <img src="./img/ico-legal.svg" class="help-business-icon" alt="Product development">
+                            <p>Build new products and services by aggregating data from the web and automating workflows.</p>
+                        </div>
+                    </a>
+                </div>
+            </div><!--/ Row -->
+        </div>
+    </section>
+    <section class="py-5">
+        <div class="container py-5 text-center products">
+            <h2 class="section-h2 mb-5">Products</h2>
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-3 py-4">
+                    <img src="./img/hp-02.svg" alt="Actors">
+                    <h3 class="section-h3 my-4">Actors</h3>
+                    <p>A computing platform that makes it easy to develop, run and share serverless cloud programs.</p>
+                    <a href="#" class="btn btn-outline-primary btn-lg mt-3">About Actors</a>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 py-4">
+                    <img src="./img/hp-01.svg" alt="Proxy">
+                    <h3 class="section-h3 my-4">Proxy</h3>
+                    <p>A universal HTTP proxy to hide the origin of your web scrapers, using both datacenter and residential IP addresses.</p>
+                    <a href="#" class="btn btn-outline-primary btn-lg mt-3">About Proxy</a>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 py-4">
+                    <img src="./img/hp-03.svg" alt="Storage">
+                    <h3 class="section-h3 my-4">Storage</h3>
+                    <p>Specialized data storages to manage web scraping jobs, save their results and export them to formats like CSV, Excel or JSON.</p>
+                    <a href="#" class="btn btn-outline-primary btn-lg mt-3">About Storage</a>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 py-4">
+                    <img src="./img/hp-04.svg" alt="Apify SDK">
+                    <h3 class="section-h3 my-4">Apify SDK</h3>
+                    <p>The world's most popular open-source Node.js library for web crawling and scraping. Supports headless Chrome.</p>
+                    <a href="#" class="btn btn-outline-primary btn-lg mt-3">About Apify SDK</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-light py-5">
+        <div class="container browser py-5">
+            <div class="mx-auto mb-3 text-center" style="max-width: 700px">
+                <h2 class="section-h2 mb-4">Browse ready-made actors from the community</h2>
+                <p>Actors are cloud programs running on Apify that can scrape web pages, process data or automate workflows. Start using them in your projects right away.</p>
+            </div>
+            
+            <div class="nav nav-pills mx-auto justify-content-lg-center py-3" id="nav-tab" role="tablist"><!-- Tablist -->
+                <a class="nav-item nav-link active" id="nav-all-actors-tab" data-toggle="tab" href="#nav-all-actors" role="tab" aria-controls="nav-all-actors" aria-selected="true">All actors</a>
+
+                <a class="nav-item nav-link" id="nav-data-processing-tab" data-toggle="tab" href="#nav-data-processing" role="tab" aria-controls="nav-data-processing" aria-selected="false">Data processing</a>
+
+                <a class="nav-item nav-link" id="nav-ecommerce-tab" data-toggle="tab" href="#nav-ecommerce" role="tab" aria-controls="nav-ecommerce" aria-selected="false">E-commerce</a>
+
+                <a class="nav-item nav-link" id="nav-marketing-tab" data-toggle="tab" href="#nav-marketing" role="tab" aria-controls="nav-marketing" aria-selected="false">Marketing</a>
+                
+                <a class="nav-item nav-link" id="nav-news-tab" data-toggle="tab" href="#nav-news" role="tab" aria-controls="nav-news" aria-selected="false">News</a>
+                
+                <a class="nav-item nav-link" id="nav-tools-tab" data-toggle="tab" href="#nav-tools" role="tab" aria-controls="nav-tools" aria-selected="false">Tools</a>
+                
+                <a class="nav-item nav-link" id="nav-travel-tab" data-toggle="tab" href="#nav-travel" role="tab" aria-controls="nav-travel" aria-selected="false">Travel</a>
+                
+            </div><!--/ Tablist -->
+            <div class="tab-content my-2" id="nav-tabContent"><!-- Tabcontent -->
+                <!-- tab -->
+                <div class="tab-pane fade show active" id="nav-all-actors" role="tabpanel" aria-labelledby="nav-all-actors-tab">
+                    <div class="row"><!-- Row - -->
+                        <div class="col-12 col-md-6 col-lg-3"><!-- Col -->
+                            <a href="#">
+                                <div class="tab-card">
+                                    <div class="media align-items-center">
+                                        <div class="tab-card-icon">
+                                            <img src="./img/icon-web.png" alt="Web Scraper" width="30" height="30">
+                                        </div>
+                                        <div class="media-body">
+                                            <h3 class="media-title">Web Scraper</h3>
+                                        </div>
+                                    </div>
+                                    <div class="text-primary my-3 small">apify/web-scraper</div>
+                                    <p>
+                                        Crawls arbitrary websites using the Chrome browser and extracts data from pages using a provided JavaScript code. The ac...
+                                    </p>
+                                    <div class="user">
+                                        <img src="./img/favicon-32x32.png" class="user-picture" alt="User apify">
+                                        <p>apify</p>
+
+                                        <span class="popularity"><i class="fas fa-users fa-sm"></i> 10841</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div><!--/ Col -->
+                        <div class="col-12 col-md-6 col-lg-3"><!-- Col -->
+                            <a href="#">
+                                <div class="tab-card">
+                                    <div class="media align-items-center">
+                                        <div class="tab-card-icon">
+                                            <img src="./img/icon-facebook.png" alt="Facebook Pages Scraper" width="30" height="30">
+                                        </div>
+                                        <div class="media-body">
+                                            <h3 class="media-title">Facebook Pages Scraper</h3>
+                                        </div>
+                                    </div>
+                                    <div class="text-primary my-3 small">pocesar/facebook-pages-scraper</div>
+                                    <p>Extract public profile information from Facebook pages and service listings. The actor scrapes data from Facebook posts,...</p>
+                                    <div class="user">
+                                        <img src="./img/person-pocesar.jfif" class="user-picture" alt="User pocesar">
+                                        <p>pocesar</p>
+
+                                        <span class="popularity"><i class="fas fa-users fa-sm"></i> 587</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div><!--/ Col -->
+                        <div class="col-12 col-md-6 col-lg-3"><!-- Col -->
+                            <a href="#">
+                                <div class="tab-card">
+                                    <div class="media align-items-center">
+                                        <div class="tab-card-icon">
+                                            <img src="./img/icon-google.png" alt="Google Search Results Scraper" width="30" height="30">
+                                        </div>
+                                        <div class="media-body">
+                                            <h3 class="media-title">Google Search Results Scraper</h3>
+                                        </div>
+                                    </div>
+                                    <div class="text-primary my-3 small">apify/google-search-scraper</div>
+                                    <p>Scrapes Google Search engine result pages (SERPs) and extracts a list of organic and paid results, ads, snap packs and m...</p>
+                                    <div class="user">
+                                        <img src="./img/favicon-32x32.png" class="user-picture" alt="User apify2">
+                                        <p>apify</p>
+
+                                        <span class="popularity"><i class="fas fa-users fa-sm"></i> 4750</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div><!--/ Col -->
+                        <div class="col-12 col-md-6 col-lg-3"><!-- Col -->
+                            <a href="#">
+                                <div class="tab-card">
+                                    <div class="media align-items-center">
+                                        <div class="tab-card-icon">
+                                            <img src="./img/icon-instagram.png" alt="Instagram Scraper" width="30" height="30">
+                                        </div>
+                                        <div class="media-body">
+                                            <h3 class="media-title">Instagram Scraper</h3>
+                                        </div>
+                                    </div>
+                                    <div class="text-primary my-3 small">jaroslavhejlek/instagram-scraper</div>
+                                    <p>Enables scraping of publicly available data from Instagram posts on profile, hashtag, and place pages. The actor extract...</p>
+                                    <div class="user">
+                                        <img src="./img/person-jaros.jfif" class="user-picture" alt="jaroslavhejlek">
+                                        <p>jaroslavhejlek</p>
+
+                                        <span class="popularity"><i class="fas fa-users fa-sm"></i> 3947</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div><!--/ Col -->
+                    </div><!--/ Row -->
+                </div>
+                <!-- tab -->
+                <div class="tab-pane fade" id="nav-data-processing" role="tabpanel" aria-labelledby="nav-data-processing-tab">
+                    <div class="row"><!-- Row -->
+                        <div class="col-12 col-md-6 col-lg-3"><!-- Col -->
+                            <a href="#">
+                                <div class="tab-card">
+                                    <div class="media align-items-center">
+                                        <div class="tab-card-icon">
+                                            <img src="./img/icon-send-email.png" alt="Send Email" width="30" height="30">
+                                        </div>
+                                        <div class="media-body">
+                                            <h3 class="media-title">Send Email</h3>
+                                        </div>
+                                    </div>
+                                    <div class="text-primary my-3 small">apify/send-mail</div>
+                                    <p>
+                                        The actor automatically sends an email to a specific address. This actor is useful for notifications and reporting. With...
+                                    </p>
+                                    <div class="user">
+                                        <img src="./img/favicon-32x32.png" class="user-picture" alt="User apify">
+                                        <p>apify</p>
+
+                                        <span class="popularity"><i class="fas fa-users fa-sm"></i> 458</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div><!--/ Col -->
+                        <div class="col-12 col-md-6 col-lg-3"><!-- Col -->
+                            <a href="#">
+                                <div class="tab-card">
+                                    <div class="media align-items-center">
+                                        <div class="tab-card-icon">
+                                            <img src="./img/icon-pdf.png" alt="HTML to PDF Converter" width="30" height="30">
+                                        </div>
+                                        <div class="media-body">
+                                            <h3 class="media-title">HTML to PDF Converter</h3>
+                                        </div>
+                                    </div>
+                                    <div class="text-primary my-3 small">jancurn/url-to-pdf</div>
+                                    <p>
+                                        Loads a web page in headless Chrome using Puppeteer and prints it to PDF. The input is a JSON object and output is a PDF...
+                                    </p>
+                                    <div class="user">
+                                        <img src="./img/person-jancurn.jfif" class="user-picture" alt="User pocesar">
+                                        <p>jancurn</p>
+
+                                        <span class="popularity"><i class="fas fa-users fa-sm"></i> 173</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div><!--/ Col -->
+                        <div class="col-12 col-md-6 col-lg-3"><!-- Col -->
+                            <a href="#">
+                                <div class="tab-card">
+                                    <div class="media align-items-center">
+                                        <div class="tab-card-icon">
+                                            <img src="./img/icon-screenshot-generator.png" alt="Website Screenshot Generator" width="30" height="30">
+                                        </div>
+                                        <div class="media-body">
+                                            <h3 class="media-title">Website Screenshot Generator</h3>
+                                        </div>
+                                    </div>
+                                    <div class="text-primary my-3 small">apify/screenshot-url</div>
+                                    <p>
+                                        Create a screenshot of a website based on a specified URL. The screenshot is stored as the output in a key-value store. ...
+                                    </p>
+                                    <div class="user">
+                                        <img src="./img/favicon-32x32.png" class="user-picture" alt="User apify2">
+                                        <p>apify</p>
+
+                                        <span class="popularity"><i class="fas fa-users fa-sm"></i> 1108</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div><!--/ Col -->
+                        <div class="col-12 col-md-6 col-lg-3"><!-- Col -->
+                            <a href="#">
+                                <div class="tab-card">
+                                    <div class="media align-items-center">
+                                        <div class="tab-card-icon">
+                                            <img src="./img/icon-google-sheets.png" alt="Google Sheets Import & Export" width="30" height="30">
+                                        </div>
+                                        <div class="media-body">
+                                            <h3 class="media-title">Google Sheets Import & Export</h3>
+                                        </div>
+                                    </div>
+                                    <div class="text-primary my-3 small">lukaskrivka/google-sheets</div>
+                                    <p>
+                                        Import data from datasets or JSON files to your Google spreadsheet. You can also programmatically process the data in yo...
+                                    </p>
+                                    <div class="user">
+                                        <img src="./img/person-jaros.jfif" class="user-picture" alt="jaroslavhejlek">
+                                        <p>lukaskrivka</p>
+                                        <span class="popularity"><i class="fas fa-users fa-sm"></i> 227</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div><!--/ Col -->
+                    </div><!--/ Row -->
+                </div>
+                <!-- tab -->
+                <div class="tab-pane fade" id="nav-ecommerce" role="tabpanel" aria-labelledby="nav-ecommerce-tab">
+                    <div class="row"><!-- Row - -->
+                        <div class="col-12 col-md-6 col-lg-3"><!-- Col -->
+                            <a href="#">
+                                <div class="tab-card">
+                                    <div class="media align-items-center">
+                                        <div class="tab-card-icon">
+                                            <img src="./img/icon-web.png" alt="Web Scraper" width="30" height="30">
+                                        </div>
+                                        <div class="media-body">
+                                            <h3 class="media-title">Web Scraper</h3>
+                                        </div>
+                                    </div>
+                                    <div class="text-primary my-3 small">apify/web-scraper</div>
+                                    <p>
+                                        Crawls arbitrary websites using the Chrome browser and extracts data from pages using a provided JavaScript code. The ac...
+                                    </p>
+                                    <div class="user">
+                                        <img src="./img/favicon-32x32.png" class="user-picture" alt="User apify">
+                                        <p>apify</p>
+
+                                        <span class="popularity"><i class="fas fa-users fa-sm"></i> 10841</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div><!--/ Col -->
+                        <div class="col-12 col-md-6 col-lg-3"><!-- Col -->
+                            <a href="#">
+                                <div class="tab-card">
+                                    <div class="media align-items-center">
+                                        <div class="tab-card-icon">
+                                            <img src="./img/icon-facebook.png" alt="Facebook Pages Scraper" width="30" height="30">
+                                        </div>
+                                        <div class="media-body">
+                                            <h3 class="media-title">Facebook Pages Scraper</h3>
+                                        </div>
+                                    </div>
+                                    <div class="text-primary my-3 small">pocesar/facebook-pages-scraper</div>
+                                    <p>Extract public profile information from Facebook pages and service listings. The actor scrapes data from Facebook posts,...</p>
+                                    <div class="user">
+                                        <img src="./img/person-pocesar.jfif" class="user-picture" alt="User pocesar">
+                                        <p>pocesar</p>
+                                        <span class="popularity"><i class="fas fa-users fa-sm"></i> 587</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div><!--/ Col -->
+                        <div class="col-12 col-md-6 col-lg-3"><!-- Col -->
+                            <a href="#">
+                                <div class="tab-card">
+                                    <div class="media align-items-center">
+                                        <div class="tab-card-icon">
+                                            <img src="./img/icon-google.png" alt="Google Search Results Scraper" width="30" height="30">
+                                        </div>
+                                        <div class="media-body">
+                                            <h3 class="media-title">Google Search Results Scraper</h3>
+                                        </div>
+                                    </div>
+                                    <div class="text-primary my-3 small">apify/google-search-scraper</div>
+                                    <p>Scrapes Google Search engine result pages (SERPs) and extracts a list of organic and paid results, ads, snap packs and m...</p>
+                                    <div class="user">
+                                        <img src="./img/favicon-32x32.png" class="user-picture" alt="User apify2">
+                                        <p>apify</p>
+                                        <span class="popularity"><i class="fas fa-users fa-sm"></i> 4750</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div><!--/ Col -->
+                        <div class="col-12 col-md-6 col-lg-3"><!-- Col -->
+                            <a href="#">
+                                <div class="tab-card">
+                                    <div class="media align-items-center">
+                                        <div class="tab-card-icon">
+                                            <img src="./img/icon-instagram.png" alt="Instagram Scraper" width="30" height="30">
+                                        </div>
+                                        <div class="media-body">
+                                            <h3 class="media-title">Instagram Scraper</h3>
+                                        </div>
+                                    </div>
+                                    <div class="text-primary my-3 small">jaroslavhejlek/instagram-scraper</div>
+                                    <p>Enables scraping of publicly available data from Instagram posts on profile, hashtag, and place pages. The actor extract...</p>
+                                    <div class="user">
+                                        <img src="./img/person-jaros.jfif" class="user-picture" alt="jaroslavhejlek">
+                                        <p>jaroslavhejlek</p>
+
+                                        <span class="popularity"><i class="fas fa-users fa-sm"></i> 3947</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div><!--/ Col -->
+                    </div><!--/ Row -->
+                </div>
+                <!-- tab -->
+                <div class="tab-pane fade" id="nav-marketing" role="tabpanel" aria-labelledby="nav-marketing-tab">
+                    <div class="row"><!-- Row -->
+                        <div class="col-12 col-md-6 col-lg-3"><!-- Col -->
+                            <a href="#">
+                                <div class="tab-card">
+                                    <div class="media align-items-center">
+                                        <div class="tab-card-icon">
+                                            <img src="./img/icon-send-email.png" alt="Send Email" width="30" height="30">
+                                        </div>
+                                        <div class="media-body">
+                                            <h3 class="media-title">Send Email</h3>
+                                        </div>
+                                    </div>
+                                    <div class="text-primary my-3 small">apify/send-mail</div>
+                                    <p>
+                                        The actor automatically sends an email to a specific address. This actor is useful for notifications and reporting. With...
+                                    </p>
+                                    <div class="user">
+                                        <img src="./img/favicon-32x32.png" class="user-picture" alt="User apify">
+                                        <p>apify</p>
+
+                                        <span class="popularity"><i class="fas fa-users fa-sm"></i> 458</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div><!--/ Col -->
+                        <div class="col-12 col-md-6 col-lg-3"><!-- Col -->
+                            <a href="#">
+                                <div class="tab-card">
+                                    <div class="media align-items-center">
+                                        <div class="tab-card-icon">
+                                            <img src="./img/icon-pdf.png" alt="HTML to PDF Converter" width="30" height="30">
+                                        </div>
+                                        <div class="media-body">
+                                            <h3 class="media-title">HTML to PDF Converter</h3>
+                                        </div>
+                                    </div>
+                                    <div class="text-primary my-3 small">jancurn/url-to-pdf</div>
+                                    <p>
+                                        Loads a web page in headless Chrome using Puppeteer and prints it to PDF. The input is a JSON object and output is a PDF...
+                                    </p>
+                                    <div class="user">
+                                        <img src="./img/person-jancurn.jfif" class="user-picture" alt="User pocesar">
+                                        <p>jancurn</p>
+                                        <span class="popularity"><i class="fas fa-users fa-sm"></i> 173</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div><!--/ Col -->
+                        <div class="col-12 col-md-6 col-lg-3"><!-- Col -->
+                            <a href="#">
+                                <div class="tab-card">
+                                    <div class="media align-items-center">
+                                        <div class="tab-card-icon">
+                                            <img src="./img/icon-screenshot-generator.png" alt="Website Screenshot Generator" width="30" height="30">
+                                        </div>
+                                        <div class="media-body">
+                                            <h3 class="media-title">Website Screenshot Generator</h3>
+                                        </div>
+                                    </div>
+                                    <div class="text-primary my-3 small">apify/screenshot-url</div>
+                                    <p>
+                                        Create a screenshot of a website based on a specified URL. The screenshot is stored as the output in a key-value store. ...
+                                    </p>
+                                    <div class="user">
+                                        <img src="./img/favicon-32x32.png" class="user-picture" alt="User apify2">
+                                        <p>apify</p>
+                                        <span class="popularity"><i class="fas fa-users fa-sm"></i> 1108</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div><!--/ Col -->
+                        <div class="col-12 col-md-6 col-lg-3"><!-- Col -->
+                            <a href="#">
+                                <div class="tab-card">
+                                    <div class="media align-items-center">
+                                        <div class="tab-card-icon">
+                                            <img src="./img/icon-google-sheets.png" alt="Google Sheets Import & Export" width="30" height="30">
+                                        </div>
+                                        <div class="media-body">
+                                            <h3 class="media-title">Google Sheets Import & Export</h3>
+                                        </div>
+                                    </div>
+                                    <div class="text-primary my-3 small">lukaskrivka/google-sheets</div>
+                                    <p>
+                                        Import data from datasets or JSON files to your Google spreadsheet. You can also programmatically process the data in yo...
+                                    </p>
+                                    <div class="user">
+                                        <img src="./img/person-jaros.jfif" class="user-picture" alt="jaroslavhejlek">
+                                        <p>lukaskrivka</p>
+                                        <span class="popularity"><i class="fas fa-users fa-sm"></i> 227</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div><!--/ Col -->
+                    </div><!--/ Row -->
+                </div>
+                <!-- tab -->
+                <div class="tab-pane fade" id="nav-news" role="tabpanel" aria-labelledby="nav-news-tab">
+                    <div class="row"><!-- Row - -->
+                        <div class="col-12 col-md-6 col-lg-3"><!-- Col -->
+                            <a href="#">
+                                <div class="tab-card">
+                                    <div class="media align-items-center">
+                                        <div class="tab-card-icon">
+                                            <img src="./img/icon-web.png" alt="Web Scraper" width="30" height="30">
+                                        </div>
+                                        <div class="media-body">
+                                            <h3 class="media-title">Web Scraper</h3>
+                                        </div>
+                                    </div>
+                                    <div class="text-primary my-3 small">apify/web-scraper</div>
+                                    <p>
+                                        Crawls arbitrary websites using the Chrome browser and extracts data from pages using a provided JavaScript code. The ac...
+                                    </p>
+                                    <div class="user">
+                                        <img src="./img/favicon-32x32.png" class="user-picture" alt="User apify">
+                                        <p>apify</p>
+                                        <span class="popularity"><i class="fas fa-users fa-sm"></i> 10841</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div><!--/ Col -->
+                        <div class="col-12 col-md-6 col-lg-3"><!-- Col -->
+                            <a href="#">
+                                <div class="tab-card">
+                                    <div class="media align-items-center">
+                                        <div class="tab-card-icon">
+                                            <img src="./img/icon-facebook.png" alt="Facebook Pages Scraper" width="30" height="30">
+                                        </div>
+                                        <div class="media-body">
+                                            <h3 class="media-title">Facebook Pages Scraper</h3>
+                                        </div>
+                                    </div>
+                                    <div class="text-primary my-3 small">pocesar/facebook-pages-scraper</div>
+                                    <p>Extract public profile information from Facebook pages and service listings. The actor scrapes data from Facebook posts,...</p>
+                                    <div class="user">
+                                        <img src="./img/person-pocesar.jfif" class="user-picture" alt="User pocesar">
+                                        <p>pocesar</p>
+                                        <span class="popularity"><i class="fas fa-users fa-sm"></i> 587</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div><!--/ Col -->
+                        <div class="col-12 col-md-6 col-lg-3"><!-- Col -->
+                            <a href="#">
+                                <div class="tab-card">
+                                    <div class="media align-items-center">
+                                        <div class="tab-card-icon">
+                                            <img src="./img/icon-google.png" alt="Google Search Results Scraper" width="30" height="30">
+                                        </div>
+                                        <div class="media-body">
+                                            <h3 class="media-title">Google Search Results Scraper</h3>
+                                        </div>
+                                    </div>
+                                    <div class="text-primary my-3 small">apify/google-search-scraper</div>
+                                    <p>Scrapes Google Search engine result pages (SERPs) and extracts a list of organic and paid results, ads, snap packs and m...</p>
+                                    <div class="user">
+                                        <img src="./img/favicon-32x32.png" class="user-picture" alt="User apify2">
+                                        <p>apify</p>
+                                        <span class="popularity"><i class="fas fa-users fa-sm"></i> 4750</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div><!--/ Col -->
+                        <div class="col-12 col-md-6 col-lg-3"><!-- Col -->
+                            <a href="#">
+                                <div class="tab-card">
+                                    <div class="media align-items-center">
+                                        <div class="tab-card-icon">
+                                            <img src="./img/icon-instagram.png" alt="Instagram Scraper" width="30" height="30">
+                                        </div>
+                                        <div class="media-body">
+                                            <h3 class="media-title">Instagram Scraper</h3>
+                                        </div>
+                                    </div>
+                                    <div class="text-primary my-3 small">jaroslavhejlek/instagram-scraper</div>
+                                    <p>Enables scraping of publicly available data from Instagram posts on profile, hashtag, and place pages. The actor extract...</p>
+                                    <div class="user">
+                                        <img src="./img/person-jaros.jfif" class="user-picture" alt="jaroslavhejlek">
+                                        <p>jaroslavhejlek</p>
+
+                                        <span class="popularity"><i class="fas fa-users fa-sm"></i> 3947</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div><!--/ Col -->
+                    </div><!--/ Row -->
+                </div>
+                <!-- tab -->
+                <div class="tab-pane fade" id="nav-tools" role="tabpanel" aria-labelledby="nav-tools-tab">
+                    <div class="row"><!-- Row -->
+                        <div class="col-12 col-md-6 col-lg-3"><!-- Col -->
+                            <a href="#">
+                                <div class="tab-card">
+                                    <div class="media align-items-center">
+                                        <div class="tab-card-icon">
+                                            <img src="./img/icon-send-email.png" alt="Send Email" width="30" height="30">
+                                        </div>
+                                        <div class="media-body">
+                                            <h3 class="media-title">Send Email</h3>
+                                        </div>
+                                    </div>
+                                    <div class="text-primary my-3 small">apify/send-mail</div>
+                                    <p>
+                                        The actor automatically sends an email to a specific address. This actor is useful for notifications and reporting. With...
+                                    </p>
+                                    <div class="user">
+                                        <img src="./img/favicon-32x32.png" class="user-picture" alt="User apify">
+                                        <p>apify</p>
+
+                                        <span class="popularity"><i class="fas fa-users fa-sm"></i> 458</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div><!--/ Col -->
+                        <div class="col-12 col-md-6 col-lg-3"><!-- Col -->
+                            <a href="#">
+                                <div class="tab-card">
+                                    <div class="media align-items-center">
+                                        <div class="tab-card-icon">
+                                            <img src="./img/icon-pdf.png" alt="HTML to PDF Converter" width="30" height="30">
+                                        </div>
+                                        <div class="media-body">
+                                            <h3 class="media-title">HTML to PDF Converter</h3>
+                                        </div>
+                                    </div>
+                                    <div class="text-primary my-3 small">jancurn/url-to-pdf</div>
+                                    <p>
+                                        Loads a web page in headless Chrome using Puppeteer and prints it to PDF. The input is a JSON object and output is a PDF...
+                                    </p>
+                                    <div class="user">
+                                        <img src="./img/person-jancurn.jfif" class="user-picture" alt="User pocesar">
+                                        <p>jancurn</p>
+                                        <span class="popularity"><i class="fas fa-users fa-sm"></i> 173</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div><!--/ Col -->
+                        <div class="col-12 col-md-6 col-lg-3"><!-- Col -->
+                            <a href="#">
+                                <div class="tab-card">
+                                    <div class="media align-items-center">
+                                        <div class="tab-card-icon">
+                                            <img src="./img/icon-screenshot-generator.png" alt="Website Screenshot Generator" width="30" height="30">
+                                        </div>
+                                        <div class="media-body">
+                                            <h3 class="media-title">Website Screenshot Generator</h3>
+                                        </div>
+                                    </div>
+                                    <div class="text-primary my-3 small">apify/screenshot-url</div>
+                                    <p>
+                                        Create a screenshot of a website based on a specified URL. The screenshot is stored as the output in a key-value store. ...
+                                    </p>
+                                    <div class="user">
+                                        <img src="./img/favicon-32x32.png" class="user-picture" alt="User apify2">
+                                        <p>apify</p>
+                                        <span class="popularity"><i class="fas fa-users fa-sm"></i> 1108</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div><!--/ Col -->
+                        <div class="col-12 col-md-6 col-lg-3"><!-- Col -->
+                            <a href="#">
+                                <div class="tab-card">
+                                    <div class="media align-items-center">
+                                        <div class="tab-card-icon">
+                                            <img src="./img/icon-google-sheets.png" alt="Google Sheets Import & Export" width="30" height="30">
+                                        </div>
+                                        <div class="media-body">
+                                            <h3 class="media-title">Google Sheets Import & Export</h3>
+                                        </div>
+                                    </div>
+                                    <div class="text-primary my-3 small">lukaskrivka/google-sheets</div>
+                                    <p>
+                                        Import data from datasets or JSON files to your Google spreadsheet. You can also programmatically process the data in yo...
+                                    </p>
+                                    <div class="user">
+                                        <img src="./img/person-jaros.jfif" class="user-picture" alt="jaroslavhejlek">
+                                        <p>lukaskrivka</p>
+                                        <span class="popularity"><i class="fas fa-users fa-sm"></i> 227</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div><!--/ Col -->
+                    </div><!--/ Row -->
+                </div>
+                <!-- tab -->
+                <div class="tab-pane fade" id="nav-travel" role="tabpanel" aria-labelledby="nav-travel-tab">
+                    <div class="row"><!-- Row - -->
+                        <div class="col-12 col-md-6 col-lg-3"><!-- Col -->
+                            <a href="#">
+                                <div class="tab-card">
+                                    <div class="media align-items-center">
+                                        <div class="tab-card-icon">
+                                            <img src="./img/icon-web.png" alt="Web Scraper" width="30" height="30">
+                                        </div>
+                                        <div class="media-body">
+                                            <h3 class="media-title">Web Scraper</h3>
+                                        </div>
+                                    </div>
+                                    <div class="text-primary my-3 small">apify/web-scraper</div>
+                                    <p>
+                                        Crawls arbitrary websites using the Chrome browser and extracts data from pages using a provided JavaScript code. The ac...
+                                    </p>
+                                    <div class="user">
+                                        <img src="./img/favicon-32x32.png" class="user-picture" alt="User apify">
+                                        <p>apify</p>
+                                        <span class="popularity"><i class="fas fa-users fa-sm"></i> 10841</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div><!--/ Col -->
+                        <div class="col-12 col-md-6 col-lg-3"><!-- Col -->
+                            <a href="#">
+                                <div class="tab-card">
+                                    <div class="media align-items-center">
+                                        <div class="tab-card-icon">
+                                            <img src="./img/icon-facebook.png" alt="Facebook Pages Scraper" width="30" height="30">
+                                        </div>
+                                        <div class="media-body">
+                                            <h3 class="media-title">Facebook Pages Scraper</h3>
+                                        </div>
+                                    </div>
+                                    <div class="text-primary my-3 small">pocesar/facebook-pages-scraper</div>
+                                    <p>Extract public profile information from Facebook pages and service listings. The actor scrapes data from Facebook posts,...</p>
+                                    <div class="user">
+                                        <img src="./img/person-pocesar.jfif" class="user-picture" alt="User pocesar">
+                                        <p>pocesar</p>
+                                        <span class="popularity"><i class="fas fa-users fa-sm"></i> 587</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div><!--/ Col -->
+                        <div class="col-12 col-md-6 col-lg-3"><!-- Col -->
+                            <a href="#">
+                                <div class="tab-card">
+                                    <div class="media align-items-center">
+                                        <div class="tab-card-icon">
+                                            <img src="./img/icon-google.png" alt="Google Search Results Scraper" width="30" height="30">
+                                        </div>
+                                        <div class="media-body">
+                                            <h3 class="media-title">Google Search Results Scraper</h3>
+                                        </div>
+                                    </div>
+                                    <div class="text-primary my-3 small">apify/google-search-scraper</div>
+                                    <p>Scrapes Google Search engine result pages (SERPs) and extracts a list of organic and paid results, ads, snap packs and m...</p>
+                                    <div class="user">
+                                        <img src="./img/favicon-32x32.png" class="user-picture" alt="User apify2">
+                                        <p>apify</p>
+                                        <span class="popularity"><i class="fas fa-users fa-sm"></i> 4750</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div><!--/ Col -->
+                        <div class="col-12 col-md-6 col-lg-3"><!-- Col -->
+                            <a href="#">
+                                <div class="tab-card">
+                                    <div class="media align-items-center">
+                                        <div class="tab-card-icon">
+                                            <img src="./img/icon-instagram.png" alt="Instagram Scraper" width="30" height="30">
+                                        </div>
+                                        <div class="media-body">
+                                            <h3 class="media-title">Instagram Scraper</h3>
+                                        </div>
+                                    </div>
+                                    <div class="text-primary my-3 small">jaroslavhejlek/instagram-scraper</div>
+                                    <p>Enables scraping of publicly available data from Instagram posts on profile, hashtag, and place pages. The actor extract...</p>
+                                    <div class="user">
+                                        <img src="./img/person-jaros.jfif" class="user-picture" alt="jaroslavhejlek">
+                                        <p>jaroslavhejlek</p>
+                                        <span class="popularity"><i class="fas fa-users fa-sm"></i> 3947</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div><!--/ Col -->
+                    </div><!--/ Row -->
+                </div>
+            </div><!--/ tabcontent -->
+        </div>
+    </section>
+    <footer>
+        <div class="container py-5">
+            <div class="row py-4"><!-- Row -->
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 py-3">
+                    <h4>Solutions</h4>
+                    <ul>
+                        <li><a href="#">Browse tools</a></li>
+                        <li><a href="#"><i class="fas fa-shopping-cart fa-sm"></i> Order custom</a></li>
+                        <li><a href="#">Enterprise</a></li>
+                        <li><a href="#">Use cases</a></li>
+                        <li><a href="#">Success stories</a></li>
+                        <li><a href="#">Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 py-3">
+                    <h4>Platform</h4>
+                    <ul>
+                        <li><a href="#">Actors</a></li>
+                        <li><a href="#">Proxy</a></li>
+                        <li><a href="#">Storage</a></li>
+                        <li><a href="#">Integrations</a></li>
+                        <li><a href="#">SDK</a></li>
+                        <li><a href="#">Status</a></li>
+                        <li><a href="#">Sign in</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 py-3">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Stack Overflow</a></li>
+                        <li><a href="#">Tools</a></li>
+                        <li><a href="#">Change log</a></li>
+                        <li><a href="#">Product roadmap</a></li>
+                        <li><a href="#">Become a partner</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 py-3">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Terms of use</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                        <li><a href="#">Jobs</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-12  col-md-6 col-lg-4 py-3">
+                    <h4>Keep in touch</h4>
+                    <div class="social">
+                        <a href="#" target="_blank" title="Twitter" aria-label="Twitter"><i class="fab fa-twitter text-primary"></i></a>
+
+                        <a href="#" target="_blank" title="Facebook" aria-label="Facebook"><i class="fab fa-facebook text-primary"></i></a>
+
+                        <a href="#" target="_blank" title="Github" aria-label="Github"><i class="fab fa-github text-primary"></i></a>
+
+                        <a href="#" target="_blank" title="Youtube" aria-label="Youtube"><i class="fab fa-youtube text-primary"></i></a>
+
+                        <a href="#" target="_blank" title="Instagram" aria-label="Instagram"><i class="fab fa-instagram text-primary"></i></a>
+                    </div>
+                    <p>
+                        Amazon gathers data on every one of its customers while they use the site. How about getting data from Amazon in re… https://t.co/KMTlkTqLqY
+                    </p>
+                    <p class="small"><i class="fab fa-twitter text-primary"></i> @apify</p>
+                </div>
+            </div><!--/ Row -->
+            <div class="row justify-content-between align-items-center mt-5 pt-4">
+                <a href="#" class="mx-3"><img src="./img/logo.svg" alt="Web Scraping" width="130"></a>
+                <span class="font-weight-normal mx-3" style="font-size: 14px">© 2020 Apify</span>
+            </div>
+        </div>
+    </footer>
+    <!-- jQuery, Popper.js, Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
